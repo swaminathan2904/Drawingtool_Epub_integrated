@@ -1,0 +1,1771 @@
+/*Classroom/Klaskamer*/
+
+/*From default.css*/
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, :before, :after, .content, .media, .step-title, .step-info, .title-info, .chapter-number, .grid, .grid-item {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  background: transparent;
+}
+
+aside {
+  clear: both;
+  margin-bottom: 1.5em;
+}
+
+aside:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.noteref_footnote, .noteref_endnote, .noteref_rearnote {
+  vertical-align: super;
+  font-size: 17px;
+  font-size: 0.89474em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+/*EOF from default*/
+
+/*BOF General*/
+
+html {
+  font-family: serif;
+  color: #000;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 17px;
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+body {
+  background: white;
+  margin: 2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  padding: 0 20px;
+  line-height: 1.5em;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    padding: 0 80px;
+  }
+}
+
+p {
+  margin: 0 0.5em 1em 0.5em;
+}
+
+code {
+  font-size: 1em;
+  color: blue;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.equation, .informalequation, .inlineequation {
+  position: relative;
+}
+.equation img, .informalequation img, .inlineequation img {
+  width: auto;
+}
+
+.equation .number, .equation .label, .informalequation .number, .informalequation .label {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.inlineequation {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*EOF General*/
+
+/*BOF asides*/
+
+.footnote, .rearnote, .footnote p, .rearnote p {
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+.footnote .number, .rearnote .number {
+  padding-right: 0.2em;
+}
+
+.sidebar {
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+.sidebar hgroup h1 a, .sidebar header h1 a {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 100%;
+}
+
+/*sidebar_1 = key concepts*/
+
+aside.sidebar_1 {
+  margin: 1.5em;
+  padding: 0;
+  background-color: #f1dbe5;
+}
+
+aside.sidebar_1 > hgroup h1, aside.sidebar_1 > hgroup .title, aside.sidebar_1 > header h1, aside.sidebar_1 > header .title {
+  margin: 0em;
+  margin-bottom: 0.5em;
+  padding: 0.5em 1em 0.5em 1.5em;
+  letter-spacing: 0.005em;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, sans-serif;
+  text-transform: none;
+  color: #000;
+  background-color: #e8c3d4;
+}
+
+aside.sidebar_1 > hgroup h1 .label, aside.sidebar_1 > hgroup h1 .number, aside.sidebar_1 > header h1 .label, aside.sidebar_1 > header h1 .number {
+  margin-bottom: 0.25em;
+  letter-spacing: 0.005em;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, sans-serif;
+  text-transform: none;
+  color: #a70f56;
+  padding: 0 0.4em 0 0;
+}
+
+aside.sidebar_1 > hgroup .subtitle, aside.sidebar_1 > hgroup .subtitle .label, aside.sidebar_1 > hgroup .subtitle .number, aside.sidebar_1 > header .subtitle, aside.sidebar_1 > header .subtitle .label, aside.sidebar_1 > header .subtitle .number {
+   padding: 0em 0em 0.3em 0.5em;
+   background-color: #f1dbe5;
+   color: black;
+   text-transform: none;
+   margin: 0;
+   line-height: 1em;
+   font-size: 1em;
+   letter-spacing: normal;
+   font-family: Verdana, Geneva, sans-serif;
+   font-weight: bold;
+}
+
+aside.sidebar_1 > hgroup .subtitle .label, aside.sidebar_1 > hgroup .subtitle .number, aside.sidebar_1 > header .subtitle .label, aside.sidebar_1 > header .subtitle .number {
+  font-size: 100%;
+  padding: 0 0.4em 0 0;
+  margin: 0 0 1em 0;
+  display: inline-block;
+}
+
+aside.sidebar_1 hgroup h1 a, aside.sidebar_1 header h1 a {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+aside.sidebar_1 ol, aside.sidebar_1 ul {
+   background-color: #FFF;
+   margin: 1em 1em 1.5em 1em;
+   padding: 0 0.5em 0em 0.5em;
+}
+
+/*sidebar_2 = not used in Classroom*/
+/*sidebar_3 = not used in Classroom*/
+/*sidebar_4 = not used in Classroom*/
+
+/*sidebar_5 = Feature box - Vocabulary*/
+aside.sidebar_5 {
+  border: 0.2em solid #a70f56;
+  margin: 1.5em;
+  padding: 0;
+  background-color: white;
+}
+
+aside.sidebar_5 > hgroup h1, aside.sidebar_5 > hgroup .title, aside.sidebar_5 > hgroup h1 .label, aside.sidebar_5 > hgroup h1 .number, aside.sidebar_5 > header h1, aside.sidebar_5 > header .title, aside.sidebar_5 > header h1 .label, aside.sidebar_5 > header h1 .number {
+  margin: 0em;
+  padding: 0.1em 0.5em 0.2em 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #a70f56;
+  text-transform: none;
+  color: white;
+  border: none;
+  font-family: Verdana, Geneva, sans-serif;
+} 
+
+aside.sidebar_5 > hgroup h1 .label, aside.sidebar_5 > hgroup h1 .number, aside.sidebar_5 > header h1 .label, aside.sidebar_5 > header h1 .number, aside.sidebar_5 > hgroup .subtitle .label, aside.sidebar_5 > hgroup .subtitle .number, aside.sidebar_5 > header .subtitle .label, aside.sidebar_5 > header .subtitle .number {
+  display: inline-block;
+  padding: 0 0.4em 0 0;
+}
+
+aside.sidebar_5 header h1 a, aside.sidebar_5 hgroup h1 a {
+   color: #f1dbe5;
+}
+
+aside.sidebar_5 .subtitle {
+   font-weight: bold;
+   font-family: Verdana, Geneva, sans-serif;
+   text-indent: 0;
+   padding: 0;
+}
+
+aside.sidebar_5 p {
+  text-indent: -1em;
+  margin: 0.5em 0.5em 1em 1em;
+  padding-left: 1em;
+}
+
+/*sidebar_7 = Not used in Classroom*/
+
+/*sidebar_8 = Notes box*/
+aside.sidebar_8 {
+  border: solid 0.15em #008576;
+  margin: 1.5em;
+  padding: 0;
+  background-color: white;
+}
+
+aside.sidebar_8 > hgroup h1, aside.sidebar_8 > header h1, aside.sidebar_8 > hgroup .title, aside.sidebar_8 > header .title {
+  margin: 0em;
+  margin-bottom: 0.5em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  letter-spacing: 0.005em;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, sans-serif;
+  text-transform: none;
+  color: #000;
+  border-bottom: 0.15em solid #008576;
+}
+
+aside.sidebar_8 > hgroup h1 .label, aside.sidebar_8 > hgroup h1 .number, aside.sidebar_8 > header h1 .label, aside.sidebar_8 > header h1 .number, aside.sidebar_8 > header .subtitle .label, aside.sidebar_8 > hgroup .subtitle .label, aside.sidebar_8 > header .subtitle .number, aside.sidebar_8 > hgroup .subtitle .number {
+  margin-bottom: 0.25em;
+  letter-spacing: 0.005em;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, sans-serif;
+  text-transform: none;
+  color: #000;
+  padding: 0 0.4em 0 0;
+}
+
+aside.sidebar_8 > header .subtitle, aside.sidebar_8 > hgroup .subtitle {
+   font-family: Verdana, Geneva, sans-serif;
+   font-weight: bold;
+}
+
+aside.sidebar_8 p {
+  margin: 0.1em 0.5em 0.5em 0.5em;
+}
+
+/*EOF asides*/
+
+/*BOF figures*/
+
+figure {
+  -webkit-column-break-inside: avoid;
+}
+
+.figure figcaption h1, figure figcaption h1, .figure figcaption .title, figure figcaption .title {
+  font-size: 1em;
+  text-transform: none;
+  color: black;
+  font-style: normal;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+.figure figcaption hgroup h1 .label, .figure figcaption hgroup h1 .number, figure figcaption hgroup h1 .label, figure figcaption hgroup h1 .number, .figure figcaption header h1 .label, .figure figcaption header h1 .number, figure figcaption header h1 .label, figure figcaption header h1 .number {
+  font-weight: bold;
+  padding-right: 0.4em;
+}
+
+figure figcaption a {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.caption, .caption p {
+  color: black;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.95em;
+  font-style: normal;
+  margin-bottom: 1em;
+}
+
+/*BOF headers*/
+
+/*.level1 = Unit head*/
+.level1 > hgroup h1, .level1 > header h1, .level1 > hgroup .title, .level1 > header .title {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.35em;
+  margin-top: 1.28em;
+  margin-bottom: 0.6em;
+  color: #000;
+  font-weight: bold;
+  padding: 0.25em; /*I've added padding all round this heading*/
+  background-color: #bfe0dc;
+  border-bottom: none;
+}
+
+.level1 > hgroup .label, .level1 > hgroup .number, .level1 > header .label, .level1 > header .number {
+	text-transform: none;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #000;
+	padding: 0 0.2em 0 0;
+	font-size: 100%;
+}
+
+.level1 > hgroup a, .level1 > header a {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/*.level2 = Head A and stream heading*/
+.level2 > hgroup h1, .level2 > header h1, .level2 > hgroup .title, .level2 > header .title {
+  font-size: 1.15em;
+  margin-top: 0em;
+  margin-bottom: 0.6em;
+  color: #008575;
+  line-height: 1.275em;
+  font-weight: 700;
+  border: none;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.level2 > hgroup h1 .label, .level2 > header h1 .label, .level2 > hgroup h1 .number, .level2 > header h1 .number {
+  font-size: 100%;
+  padding-right: 0.2em;
+}
+
+.level2 > hgroup a, .level2 > header a {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/*.level3 = Head B*/
+.level3 > hgroup h1, .level3 > header h1, .level3 > hgroup .title, .level3 > header .title {
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  color:  #333;
+  line-height: 1.2em;
+  font-style: normal;
+  font-weight: bold;
+  border: none;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.level3 > hgroup h1 .label, .level3 > hgroup h1 .number, .level3 > header h1 .label, .level3 > header h1 .number {
+  font-size: 100%;
+  padding: 0 0.4em 0 0;
+}
+
+.level3 > hgroup a, .level3 > header a {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/*.level4 = Head C*/
+.level4 > hgroup h1, .level4 > hgroup h1 .label, .level4 > hgroup h1 .number, .level4 > header h1, .level4 > header h1 .label, .level4 > header h1 .number {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  margin-top: 0.75em;
+  margin-bottom: 0.15em;
+  color: #666;
+  font-weight: bold;
+  line-height: 1.25em;
+  border: none;
+}
+
+.level4 > hgroup h1 .label, .level4 > hgroup h1 .number, .level4 > header h1 .label, .level4 > header h1 .number {
+   padding: 0 0.4em 0 0;
+}
+
+.level4 > hgroup a, .level4 > header a {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/*.level5 not used in Classroom*/
+/*.level6 not used in Classroom*/
+
+/*.chapter = Chapter heading*/
+.chapter > hgroup, .chapter > header {
+  border: none;
+}
+
+.chapter > hgroup h1, .chapter > header h1, .chapter > hgroup .title, .chapter > header .title {
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 1.8em;
+  margin: 3em 0em 1em 0;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  background-color: #40a498;
+  padding: 1em 0em 1em 0.75em;
+}
+
+.chapter > hgroup h1 a, .chapter > header h1 a {
+  color: #000;
+}
+
+.chapter > hgroup h1 .number, .chapter > header h1 .number {
+  text-transform: none;
+  background-color: #d9ecea;
+  color: #008575;
+  font-size: 1.5em;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  padding: 0.1em 0.3em 0.2em 0.3em;
+  margin-right: 1em;
+}
+ 
+.chapter >hgroup h1 .label, .chapter > header h1 .label {
+  text-transform: none;
+  color: #000;
+  font-size: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 1.28em 0 0.6em 0;
+  background-color: #008575;
+  padding: 0 0em 1em 5em;
+  
+}
+
+/*EOF headers*/
+
+/*BOF lists*/
+
+ol, ul, ol li, ol p, ul li, ul p {
+  margin: 0 0.5em 1em 2em;
+}
+
+ol[type="a2"], ol[type="A"] {
+  list-style-type: upper-alpha;
+}
+
+ol[type="a"] {
+  list-style-type: lower-alpha;
+}
+
+ol[type="i"] {
+  list-style-type: lower-roman;
+}
+
+ol[type="I"] {
+  list-style-type: upper-roman;
+}
+
+ol ol:not([type]) {
+  list-style-type: lower-latin;
+}
+
+ol ol ol:not([type]) {
+  list-style-type: lower-roman;
+}
+
+ol ul {
+  list-style-type: circle;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 0 0 1.5em 1.5em;
+}
+
+ul ul {
+  list-style-type: circle;
+}
+
+ul ul ul {
+  list-style-type: square;
+}
+
+ul li, ol li {
+  margin: 0 0.5em 1em 1em;
+}
+
+ol.ol_1 {
+  padding-left:1em;
+  margin-left:1em;
+  list-style-type:none;
+  display: block;
+}
+
+ol.ol_1 li p:first-child {
+  text-indent:-1em;
+}
+
+ol.ol_1 {
+  counter-reset: ol1;
+}
+
+ol.ol_1 li {
+  counter-increment: ol1;
+}
+
+ol.ol_1 li p:first-child:before {
+  font-weight: bold;
+  content: counter(ol1, decimal) ".\2003" ;
+}
+
+ol.ol_1 li ol.ol_1 {
+  counter-reset: ol2;
+}
+
+ol.ol_1 li ol.ol_1 li {
+  counter-increment: ol2;
+}
+
+ol.ol_1 li ol.ol_1 li p:first-child:before {
+  content: counter(ol1, decimal) "." counter(ol2, decimal) "\2003" ;
+}
+
+ol.ol_1 li ol.ol_1 li ol.ol_1 {
+  counter-reset: ol3;
+}
+
+ol.ol_1 li ol.ol_1 li ol.ol_1 li {
+  counter-increment: ol3;
+}
+
+ol.ol_1 li ol.ol_1 li ol.ol_1 li p:first-child:before {
+  content: counter(ol1, decimal) "." counter(ol2, decimal) "." counter(ol3, decimal) " " ;
+}
+
+ol.ol_1 li ol.ol_1 li ol.ol_1 li ol.ol_1 {
+  counter-reset: ol4;
+}
+
+ol.ol_1 li ol.ol_1 li ol.ol_1 li ol.ol_1 li {
+  counter-increment: ol4;
+}
+
+ol.ol_1 li ol.ol_1 li ol.ol_1 li p:first-child:before {
+  content: counter(ol1, decimal) "." counter(ol2, decimal) "." counter(ol3, decimal) "\2003" ;
+}
+
+ol.ol_1 li ol.ol_1 li ol.ol_1 li ol.ol_1 {
+  counter-reset: ol4;
+}
+
+ol.ol_1 li ol.ol_1 li ol.ol_1 li ol.ol_1 li {
+  counter-increment: ol4;
+}
+
+ol.ol_1 li ol.ol_1 li ol.ol_1 li ol.ol_1 li p:first-child:before {
+  content: counter(ol4, lower-alpha) ". " ;
+}
+
+ol.ol_2 {
+  list-style-type:decimal;
+}
+
+ol.ol_2 li p, ol.ol_2 li {
+  font-weight:normal;
+}
+
+ol.ol_2 li ol.ol_2 {
+  list-style-type:lower-alpha;
+}
+
+ol.ol_2 li ol.ol_2 li ol.ol_2 {
+  list-style-type:lower-roman;
+}
+
+ol.dynamiclist li {
+  display: block;
+}
+
+ol.dynamiclist li p:first-child {
+  text-indent:-1em;
+}
+
+/*EOF lists*/
+
+/*BOF TOC*/
+
+.toc ol, .toc ol ol, .toc ol ol ol {
+   list-style-type: none;
+}
+
+.toc ol li .label, .toc ol ol li .label, .toc ol ol ol li .label, .toc ol li .number, .toc ol ol li .number, .toc ol ol ol li .number {
+   padding: 0 0.4em 0 0.4em;
+}
+
+.toc ol > li a {
+  color: #622978;
+}
+
+.toc ol > li ol li a {
+  color: #622978;
+}
+
+.tocentrylist li p {
+  margin-bottom: 1.5em;
+}
+.tocentrylist ol {
+  margin-left: 1.5em;
+}
+
+/*EOF TOC*/
+
+/*BOF sections*/
+
+/*section.case = case study*/
+section.case {
+  background-color: #e5f3f1;
+  font-weight: 400;
+  margin: 0 1.5em;
+  padding: 0.5em 0.5em 0.5em.0.5em;
+  clear: both;
+}
+
+section.case > hgroup h1, section.case > header h1, section.case > hgroup h1, section.case > header h1, section.case > hgroup .title, section.case > header .title {
+  font-weight: bold;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.2em;
+  margin: 0 0.5em 0.5em 0.5em;
+  padding-top: 0.15em;
+  color: #000;
+  line-height: 1.5em;
+  background-color: #e5f3f1;
+  border: none;
+}
+
+section.case > hgroup h1 .label, section.case > hgroup h1 .number, section.case > header h1 .label, section.case > header h1 .number {
+  font-size: 100%;
+  padding-right: 0.25em;
+  color: #40a498;
+  background-color: #e5f3f1;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+section.case > hgroup .subtitle, section.case > header .subtitle, section.case section hgroup .subtitle, section.case section header .subtitle {
+  font-weight: bold;
+  font-size: 1.085em;
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0 0.5em 0.5em 0.5em;
+  color: #000;
+  line-height: 1.5em;
+  background-color: #e5f3f1;
+  column-count: 1;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+}
+
+section.case > hgroup .subtitle .label, section.case > hgroup .subtitle .number, section.case > header .subtitle .label, section.case > header .subtitle .number, section.case section hgroup .subtitle .label, section.case section hgroup .subtitle .number, section.case section header .subtitle .label, section.case section header .subtitle .number {
+  padding: 0 0.4em 0 0;
+}
+
+.case .level1 header h1, .case .level1 header .title, .case .level1 hgroup h1, .case .level1 hgroup .title, .case .level2 header h1, .case .level2 header .title, .case .level2 hgroup h1, .case .level2 hgroup .title, .case .level3 header h1, .case .level3 header .title, .case .level3 hgroup h1, .case .level3 hgroup .title, .case .level4 header h1, .case .level4 header .title, .case .level4 hgroup h1, .case .level4 hgroup .title, .case .level5 header h1, .case .level5 header .title, .case .level5 hgroup h1, .case .level5 hgroup .title {
+  font-weight: bold;
+  font-size: 1.085em;
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0 0.5em 0.5em 0.5em; 
+}
+
+section.case > figure figcaption h1, section.case > figure figcaption .title {
+  margin: 0 0.5em 1em 0.5em;
+  padding: 0;
+  font-size: 0.95em;
+  font-style: normal;
+  font-weight: normal;
+  border-bottom: none;
+}
+
+section.case > figure figcaption h1 .label, section.case > figure figcaption h1 .number {
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  padding: 0 0.3em 0 0;
+}
+
+section.case table, section.case figure {
+  margin: 0.1em 1em 1em 1em;
+}
+
+/*.letter = letter; NB: used with div.div_ls_1 (address, right aligned) and div.div_ls_2 (body of letter)*/
+.letter {
+  margin: 1.5em;
+  background-color: #FFF;
+  padding: 0.25em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.letter > header h1, .letter > hgroup h1, .letter > header .title, .letter > hgroup .title {
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 1.25em;
+   font-weight: bold;
+   margin: 0 0 0.5em 0.5em;
+   background-color: white;
+   color: black;
+}
+
+.letter > header .subtitle, .letter > hgroup .subtitle, .letter section > header .subtitle, .letter section hgroup .subtitle {
+   font-family: Verdana, Geneva, sans-serif;
+   font-weight: bold;
+   margin: 0 0 0.5em 0.5em;
+}
+
+.letter .label, .letter .number {
+   padding: 0 0.4em 0 0;
+}
+
+section.letter figure {
+   margin-left: 0;
+   margin-top: 0;
+}
+
+section.letter p {
+   margin: 0;
+   padding: 0;
+   clear: both;
+}
+
+/*Letter address*/
+div.div_ls_1 {
+   margin-bottom: 0;
+   width: auto;
+   float: right;
+}
+
+/*Letter body*/
+div.div_ls_2, section.letter div.div_ls_2 p, section.letter div.div_ls_1 p {
+   margin-bottom: 0;
+   width: auto;
+   clear: both;
+}
+
+/*Section - Activity*/
+section.practice_1 {
+  margin: 1em 0 1.5em 0;
+  padding: 0; 
+}
+
+section.practice_1 > hgroup h1, section.practice_1 > header h1, section.practice_1 > hgroup .title, section.practice_1 > header .title {
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
+  margin: 0 0.5em 0.3em 0em;
+  line-height: 1.275em;
+  padding: 0.5em 0 0.5em 0em;
+  background-color: #7fc1ba; 
+}
+
+section.practice_1 > hgroup h1 .label, section.practice_1 > header h1 .label {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+  color: #fff;
+  background-color: #008575;
+  padding: 0.5em 0 0.5em 0.5em;
+}
+
+section.practice_1 > hgroup h1 .number, section.practice_1 > header h1 .number {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+  color: #fff;
+  background-color: #008575;
+  padding: 0.5em 0.5em 0.5em 0em;
+  margin-right: 0.5em;
+}
+
+section.practice_1 > hgroup .subtitle, section.practice_1 > header .subtitle, section.practice_1 section hgroup .subtitle, section.practice_1 section header .subtitle {
+   color: #000;
+   font-family: Verdana, Geneva, sans-serif;
+   font-weight: bold;
+}
+
+section.practice_1 > hgroup .subtitle .label, section.practice_1 > hgroup .subtitle .number, section.practice_1 > header .subtitle .label, section.practice_1 > header .subtitle .number, section.practice_1 section hgroup .subtitle .label, section.practice_1 section hgroup .subtitle .number, section.practice_1 section header .subtitle .label, section.practice_1 section header .subtitle .number {
+  padding: 0 0.3em 0 0;
+}
+
+section.practice_1 .p_ls_3, section.practice_1 section .p_ls_3 {
+   color: #666;
+   font-family: Georgia, "Times New Roman", Times, serif;
+   font-weight: bold;
+   margin-bottom: 0.35em;
+}
+
+section.practice_1 .p_ls_3 .label, section.practice_1 .p_ls_3 .number, section.practice_1 section .p_ls_3 .label, section.practice_1 section .p_ls_3 .number {
+   padding: 0 0.2em 0 0;
+}
+
+section.practice_1 > hgroup h1 a, section.practice_1 header h1 a, section.practice_1 hgroup .title a, section.practice_1 header .title a, section.practice_1 hgroup .subtitle a, section.practice_1 header .subtitle a {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 100%;
+}
+
+section.practice_1 > p {
+  margin: 0.1em 0.5em 1em 0.5em;
+}
+
+section.practice_1 figure, section.practice_1 table {
+   margin: 0.5em 0.5em 1em 0.5em;
+}
+
+section.practice_1 figcaption hgroup h1, section.practice_1 figcaption hgroup .title, section.practice_1 figcaption hgroup h1 .label, section.practice_1 figcaption hgroup h1 .number, section.practice_1 figcaption header h1, section.practice_1 figcaption header .title, section.practice_1 figcaption header h1 .label, section.practice_1 figcaption header h1 .number {
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 1em;
+   font-weight: normal;
+   font-style: normal;
+}
+
+section.practice_1 figcaption hgroup h1 .label, section.practice_1 figcaption hgroup h1 .number, section.practice_1 figcaption header h1 .label, section.practice_1 figcaption header h1 .number {
+  font-weight: bold;
+  padding-right: 0.4em;
+}
+
+/*Section - Summary*/
+section.practice_2 {
+   background-color: #f1dbe5;
+   margin: 0 1.5em 1em 1.5em;
+   padding: 0;
+   clear: both;
+}
+
+section.practice_2 > hgroup h1, section.practice_2 > header h1, section.practice_2 > hgroup .title, section.practice_2 > header .title {
+   font-weight: bold;
+   font-size: 1.35em;
+   margin: 0.5em 0 0.5em 0;
+   padding: 0;
+   color: #000;
+   line-height: 1.5em;
+   background-color: #e8c3d4;
+   border: none;
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+section.practice_2 > hgroup h1 .label, section.practice_2 > header h1 .label, section.practice_2 > hgroup h1 .number, section.practice_2 > header h1 .number {
+   background-color: #d287aa;
+   font-family: Verdana, Geneva, sans-serif;
+   font-weight: bold;
+   padding: 0.1em 0.5em 0.2em 0.5em;
+   color: #fff;
+   margin-right: 0.5em;
+}
+
+section.practice_2 > hgroup .subtitle, section.practice_2 > header .subtitle, section.practice_2 section hgroup .subtitle, section.practice_2 section header .subtitle {
+   font-weight: bold;
+   font-size: 1.085em;
+   font-family: Georgia, "Times New Roman", Times, serif;
+   margin: 0 0.5em 0.5em 0.5em;
+   color: #000;
+   line-height: 1.5em;
+   column-count: 1;
+   -webkit-column-count: 1;
+   -moz-column-count: 1;
+   background-color: #f1dbe5;
+}
+
+section.practice_2 > hgroup .subtitle .label, section.practice_2 > hgroup .subtitle .number, section.practice_2 > header .subtitle .label, section.practice_2 > header .subtitle .number, section.practice_2 section hgroup .subtitle .label, section.practice_2 section hgroup .subtitle .number, section.practice_2 section header .subtitle .label, section.practice_2 section header .subtitle .number {
+  padding: 0 0.4em 0 0;
+}
+
+section.practice_2 .p_ls_3, section.practice_2 section .p_ls_3, section.practice_2 .level2 header h1, section.practice_2 .level2 hgroup h1, section.practice_2 .level3 header h1, section.practice_2 .level3 hgroup h1, section.practice_2 .level4 header h1, section.practice_2 .level4 hgroup h1, section.practice_2 .level5 header h1, section.practice_2 .level5 hgroup h1 {
+  font-weight: bold;
+  font-size: 1.15em;
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0 0 0.35em 0;
+  padding: 0.2em 0.5em 0.5em 0.2em;
+  color: black;
+}
+
+section.practice_2 .p_ls_3 .label, section.practice_2 .p_ls_3 .number, section.practice_2 section .p_ls_3 .label, section.practice_2 section .p_ls_3 .number, section.practice_2 .p_ls_4 .label, section.practice_2 .p_ls_4 .number, section.practice_2 section .p_ls_4 .label, section.practice_2 section .p_ls_4 .number {
+  padding: 0 0.4em 0 0;
+}
+
+section.practice_2 .level2 header h1 .label, section.practice_2 .level2 hgroup h1 .label, section.practice_2 .level3 header h1 .label, section.practice_2 .level3 hgroup h1 .label, section.practice_2 .level4 header h1 .label, section.practice_2 .level4 hgroup h1 .label, section.practice_2 .level5 header h1 .label, section.practice_2 .level5 hgroup h1 .label, section.practice_2 .level2 header h1 .number, section.practice_2 .level2 hgroup h1 .number, section.practice_2 .level3 header h1 .number, section.practice_2 .level3 hgroup h1 .number, section.practice_2 .level4 header h1 .number, section.practice_2 .level4 hgroup h1 .number, section.practice_2 .level5 header h1 .number, section.practice_2 .level5 hgroup h1 .number {
+  padding: 0 0.4em 0 0;
+  color: black;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+section.practice_2 .p_ls_4, section.practice_2 section .p_ls_4 {
+  font-weight: bold;
+  font-size: 1em;
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0 0 0.5em 0;
+  padding: 0.2em 0.5em 0.5em 0.2em;
+  color: #000;
+}
+
+section.practice_2 hgroup .label, section.practice_2 header .label, section.practice_2 hgroup number, section.practice_2 header .number {
+  padding: 0 0.2em 0 0;
+  font-size: 100%;
+}
+
+section.practice_2 hgroup a, section.practice_2 header a {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 100%;
+}
+
+section.practice_2 figure, section.practice_2 table {
+   margin: 0.5em;   
+}
+
+section.practice_2 > figure figcaption h1, section.practice_2 > figure figcaption .title {
+   margin: 0 0.5em 0 0.5em;
+   padding: 0;
+   font-size: 0.95em;
+   font-weight: normal;
+   border-bottom: none;
+}
+
+section.practice_2 > figure figcaption h1 .label, section.practice_2 > figure figcaption h1 .number {
+   font-weight: bold;
+}
+
+/*section - Revision*/
+section.practice_3 {
+   background-color: #e5f3f1;
+   margin: 0 1.5em 1em 1.5em;
+   padding: 0;
+}
+
+section.practice_3 > hgroup h1, section.practice_3 > header h1, section.practice_3 > hgroup .title, section.practice_3 > header .title {
+   font-weight: bold;
+   font-size: 1.35em;
+   font-family: Verdana, Geneva, sans-serif;
+   margin: 0.5em 0 0.5em 0;
+   padding: 0;
+   color: #fff;
+   line-height: 1.5em;
+   background-color: #008575;
+   border: none;
+}
+
+section.practice_3 > hgroup h1 .label, section.practice_3 > header h1 .label, section.practice_3 > hgroup h1 .number, section.practice_3 > header h1 .number {
+   background-color: #bfe0dc;
+   font-family: Verdana, Geneva, sans-serif;
+   font-weight: bold;
+   padding: 0.1em 0.5em 0.2em 0.5em;
+   color: #000;
+   margin-right: 0.5em;
+}
+
+section.practice_3 > hgroup .subtitle, section.practice_3 > header .subtitle, section.practice_3 section hgroup .subtitle, section.practice_3 section header .subtitle, section.practice_3 .level2 header h1, section.practice_3 .level2 hgroup h1, section.practice_3 .level3 header h1, section.practice_3 .level3 hgroup h1, section.practice_3 .level4 header h1, section.practice_3 .level4 hgroup h1 {
+   font-weight: bold;
+   font-size: 1em;
+   font-family: Verdana, Geneva, sans-serif;
+   margin: 0 0.5em 0.5em 0.5em;
+   color: #000;
+   line-height: 1.5em;
+   column-count: 1;
+   -webkit-column-count: 1;
+   -moz-column-count: 1;
+}
+
+section.practice_3 .level4 header h1 .label, section.practice_3 .level4 hgroup h1 .label, section.practice_3 .level4 header h1 .number, section.practice_3 .level4 hgroup h1 .number {
+  font-family: Verdana, Geneva, sans-serif;
+  color: #000;
+ }
+
+section.practice_3 > hgroup .subtitle .label, section.practice_3 > header .subtitle .label, section.practice_3 > hgroup .subtitle .number, section.practice_3 > header .subtitle .number, section.practice_3 section hgroup .subtitle .label, section.practice_3 section header .subtitle .label, section.practice_3 section hgroup .subtitle .number, section.practice_3 section header .subtitle .number {
+  padding: 0 0.4em 0 0;
+}
+
+section.practice_3 > header h1 a, section.practice_3 > hgroup h1 a {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #bfe0dc;
+}
+
+section.practice_3 figure, section.practice_3 table {
+   margin: 0.5em;
+}
+
+section.practice_3 figure figcaption h1, section.practice_3 figure figcaption .title {   margin: 0 0.5em 0 0.5em;
+   padding: 0;
+   font-size: 0.95em;
+   font-weight: normal;
+   border-bottom: none;
+}
+
+section.practice_3 > figure figcaption h1 .label, section.practice_3 > figure figcaption h1 .number {
+   font-weight: bold;
+}
+
+section.practice_3 table tr th {
+   border-color: #000;
+}
+
+section.practice_3 table tr td {
+   border-color: #000;
+   background-color: white;
+}
+
+section.practice_3 section.practice_1 > hgroup h1 .label, section.practice_1 > header h1 .label {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+  color: #fff;
+  background-color: #008575;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin-right: 0;
+}
+
+section.practice_3 section.practice_1 > hgroup h1 .number, section.practice_1 > header h1 .number {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+  color: #fff;
+  background-color: #008575;
+  padding: 0.5em 0.5em 0.5em 0em;
+  margin-right: 0.5em;
+}
+
+/*Section - Assessment*/
+section.practice_4 {
+  background-color: #e5f3f1;
+  font-weight: 400;
+  padding: 0;
+  clear: both;
+  margin: 1em 0 1.5em 0;
+}
+
+section.practice_4 > hgroup h1, section.practice_4 > hgroup .title, section.practice_4 > header h1, section.practice_4 > header .title {
+  font-weight: bold;
+  font-size: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0 0 0.5em 0;
+  padding: 0.1em 0.5em 0.1em 0.5em; 
+  color: #fff;
+  line-height: 1.5em;
+  background-color: #008575;
+}
+
+section.practice_4 > hgroup h1 .label, section.practice_4 > hgroup h1 .number, section.practice_4 > header h1 .label, section.practice_4 > header h1 .number {
+  padding: 0 0.2em 0 0;
+  font-size: 100%;
+  color: white;
+}
+
+section.practice_4 > hgroup .subtitle, section.practice_4 > header .subtitle, section.practice_4 section hgroup .subtitle, section.practice_4 section header .subtitle { 
+  font-weight: bold;
+  font-size: 1em;
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0 0 0.5em 0;
+  padding: 0.1em 0.5em 0.1em 0.5em; 
+  color: #000;
+  line-height: 1.5em;
+  
+}
+
+section.practice_4 > hgroup .label, section.practice_4 > header .label, section.practice_4 > header .number, section.practice_4 > hgroup .number {
+  padding: 0 0.4em 0 0;
+}
+
+section.practice_4 > hgroup h1 a, section.practice_4 > header h1 a {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 100%;
+  color: #bfe0dc;
+}
+
+section.practice_4 > figure figcaption h1, section.practice_4 > figure figcaption .caption p {
+  margin: 0 0.5em 1em 0.5em;
+  padding: 0;
+  font-size: 0.95em;
+  font-weight: normal;
+  color: #000;
+  border-bottom: none;
+}
+
+section.practice_4 > figure figcaption h1 .label, section.practice_4 > figure figcaption h1 .number, section.practice_4 > figure figcaption .caption p .label, section.practice_4 > figure figcaption .caption p .number {
+  font-weight: bold;
+  font-size: 100%;
+  padding: 0 0.3em 0 0;
+  color: black;
+}
+
+section.practice_4 > p, section.practice_4 figure, section.practice_4 table {
+  margin: 0.1em 0.5em 1em 0.5em;
+}
+
+section.practice_4 > figure figcaption h1 .label, section.practice_4 > figure figcaption h1 .number {
+  font-weight: bold;
+}
+
+section.practice_4 table tr th {
+  background-color: #bfe0dc;
+  border: 1px solid #000;
+  padding: 0.5em;
+}
+
+section.practice_4 th.th_1 {
+  background-color: #d9ecea;
+}
+
+section.practice_4 table tr td {
+  background-color: white;
+  border: 1px solid #000;
+  padding: 0.5em;
+}
+
+section.practice_4 > .level2 header h1, section.practice_4 > .level2 hgroup h1, section.practice_4 > .level2 header .title, section.practice_4 > .level2 hgroup .title, section.practice_4 > .level4 header h1, section.practice_4 > .level4 hgroup h1, section.practice_4 > .level4 header .title, section.practice_4 > .level4 hgroup .title, section.practice_4 > .level3 header h1, section.practice_4 > .level3 hgroup h1, section.practice_4 > .level3 header .title, section.practice_4 > .level3 hgroup .title, section.practice_4 > .level5 header h1, section.practice_4 > .level5 hgroup h1, section.practice_4 > .level5 header .title, section.practice_4 > .level5 hgroup .title {
+   background-color: #e5f3f1;
+   color: black;
+   font-family: Verdana, Geneva, sans-serif;
+   margin: 0 0 0 0.5em;
+}
+
+section.practice_4 > .level2 header h1 .label, section.practice_4 > .level2 hgroup h1 .label, section.practice_4 > .level4 header h1 .label, section.practice_4 > .level4 hgroup h1 .label, section.practice_4 > .level3 header h1 .label, section.practice_4 > .level3 hgroup h1 .label, section.practice_4 > .level5 header h1 .label, section.practice_4 > .level5 hgroup h1 .label section.practice_4 > .level2 header h1 .number, section.practice_4 > .level2 hgroup h1 .number, section.practice_4 > .level4 header h1 .number, section.practice_4 > .level4 hgroup h1 .number, section.practice_4 > .level3 header h1 .number, section.practice_4 > .level3 hgroup h1 .number, section.practice_4 > .level5 header h1 .number, section.practice_4 > .level5 hgroup h1 .number {
+   background-color: #e5f3f1;
+   color: black;
+   font-size: 100%;
+   padding: 0 0.4em 0 0;
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+/*section.practice_5 = worked example*/
+section.practice_5 {
+  border: 0.2em solid #622978;
+  background-color: #f1dbe5;
+  font-weight: 400;
+  margin: 1em 1.5em 2em 1.5em;
+  padding: 0em 0em 0.5em.0.5em;
+  clear: both;
+}
+
+section.practice_5 > hgroup h1, section.practice_5 > header h1, section.practice_5 > hgroup .title, section.practice_5 > header .title {
+  font-weight: bold;
+  font-size: 1.075em;
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0 0 0.5em 0;
+  padding: 0.3em;
+  color: #fff;
+  background-color: #d287aa;
+  border: none;
+  
+}
+
+section.practice_5 > hgroup h1 .label, section.practice_5 > hgroup h1 .number, section.practice_5 > header h1 .label, section.practice_5 > header h1 .number {
+  font-size: 100%;
+  font-weight: bold;
+  font-family: Verdana, Geneva, sans-serif;
+  padding: 0.3em;
+  background-color: #d287aa;
+  color: #000;
+}
+
+section.practice_5 > figure figcaption h1, section.practice_5 > figure figcaption .title {
+  margin: 0 0.5em 1em 0.5em;
+  padding: 0;
+  font-size: 0.95em;
+  font-weight: normal;
+  text-transform: none;
+  color: #000;
+  background-color: #f1dbe5;
+  border-bottom: none;
+}
+
+section.practice_5 > figure figcaption h1 .label, section.practice_5 > figure figcaption h1 .number {
+  font-weight: bold;
+  font-size: 100%;
+  padding: 0 0.2em 0 0;
+  text-transform: none;
+  background-color: #f1dbe5;
+  color: black;
+}
+
+section.practice_5 > hgroup .subtitle, section.practice_5 > header .subtitle, section.practice_5 section hgroup .subtitle, section.practice_5 section header .subtitle {
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0 0.5em 1em 0.5em;
+  color: black;
+  font-weight: bold;
+}
+
+section.practice_5 > hgroup .subtitle .label, section.practice_5 > hgroup .subtitle .number, section.practice_5 > header .subtitle .label, section.practice_5 > header .subtitle .number, section.practice_5 section hgroup .subtitle .label, section.practice_5 section hgroup .subtitle .number, section.practice_5 section header .subtitle .label, section.practice_5 section header .subtitle .number {
+  padding: 0 0.4em 0 0;
+  margin: 0;
+}
+
+section.practice_5 hgroup a, section.practice_5 header a {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 100%;
+}
+
+section.practice_5 > .level2 header h1, section.practice_5 > .level2 hgroup h1, section.practice_5 > .level2 header h1 .title, section.practice_5 > .level2 hgroup h1 .title, section.practice_5 > .level4 header h1, section.practice_5 > .level4 hgroup h1, section.practice_5 > .level4 header h1 .title, section.practice_5 > .level4 hgroup h1 .title, section.practice_5 > .level3 header h1, section.practice_5 > .level3 hgroup h1, section.practice_5 > .level3 header h1 .title, section.practice_5 > .level3 hgroup h1 .title, section.practice_5 > .level5 header h1, section.practice_5 > .level5 hgroup h1, section.practice_5 > .level5 header h1 .title, section.practice_5 > .level5 hgroup h1 .title {
+   background-color: #f1dbe5;
+   color: black;
+   font-size: 1.075em;
+   font-family: Verdana, Geneva, sans-serif;
+   margin: 0 0 0 0.5em;
+}
+
+section.practice_5 > .level2 header h1 .label, section.practice_5 > .level2 hgroup h1 .label, section.practice_5 > .level4 header h1 .label, section.practice_5 > .level4 hgroup h1 .label, section.practice_5 > .level3 header h1 .label, section.practice_5 > .level3 hgroup h1 .label, section.practice_5 > .level2 header h1 .number, section.practice_5 > .level2 hgroup h1 .number, section.practice_5 > .level4 header h1 .number, section.practice_5 > .level4 hgroup h1 .number, section.practice_5 > .level3 header h1 .number, section.practice_5 > .level3 hgroup h1 .number {
+   background-color: #f1dbe5;
+   color: #000;
+   font-size: 100%;
+   padding: 0 0.4em 0 0;
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+section.practice_5 > p, section.practice_5 figure, section.practice_5 table {
+  margin: 0.5em 0.5em 1em 0.5em;
+}
+
+section.practice_5 figure.table table tr th {
+	color: #FFF;
+	background-color: #bd4b80;
+}
+
+/*Section - extract*/
+section.practice_6 {
+   background-color: #e5f3f1;
+   font-weight: 400;
+   padding: 0.5em 0 0.5em.0.5em;
+   margin: 1.5em 0 1em 0;
+   clear: both;
+}
+
+section.practice_6 > hgroup h1, section.practice_6 > header h1, section.practice_6 > hgroup .title, section.practice_6 > header .title {
+   background-color: #e5f3f1;
+   font-weight: bold;
+   font-size: 1.2em;
+   margin: 0 0 0.5em 0;
+   padding: 0.1em 0.5em 0.1em 0.5em; 
+   color: #000;
+   line-height: 1.5em;
+   border: none;
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+section.practice_6 > hgroup h1 .label, section.practice_6 > hgroup h1 .number, section.practice_6 > header h1 .label, section.practice_6 > header h1 .number {
+   font-size: 100%;
+   font-weight: bold;
+   color: black;
+   background-color: #e5f3f1;
+   padding: 0 0.4em 0 0;
+}
+
+section.practice_6 hgroup h1 a, section.practice_6 header h1 a {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 100%;
+}
+
+section.practice_6 > hgroup .subtitle, section.practice_6 > header .subtitle, section.practice_6 section hgroup .subtitle, section.practice_6 section header .subtitle {
+  font-weight: bold;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.15em;
+  color: #40a498;
+  padding: 0;
+  margin: 0.5em;
+  background-color: #e5f3f1;
+}
+
+section.practice_6 > hgroup .subtitle .label, section.practice_6 > header .subtitle .label, section.practice_6 > hgroup .subtitle .number, section.practice_6 > header .subtitle .number, section.practice_6 section hgroup .subtitle .label, section.practice_6 section header .subtitle .label, section.practice_6 section hgroup .subtitle .number, section.practice_6 section header .subtitle .number {
+   padding: 0 0.4em 0 0;
+   background-color: #e5f3f1;
+   color: #40a498;
+}
+
+section.practice_6 figure figcaption h1, section.practice_6 figure figcaption .title, section.practice_6 figure figcaption hgroup h1, section.practice_6 figure figcaption hgroup .title, section.practice_6 figure figcaption header h1, section.practice_6 figure figcaption header .title {
+   margin: 0 0.5em 1em 0.5em;
+   padding: 0;
+   font-size: 0.95em;
+   font-weight: normal;
+   color: #000;
+   border-bottom: none;
+}
+
+section.practice_6 figure figcaption h1 .label, section.practice_6 figure figcaption h1 .number {
+   font-weight: bold;
+}
+
+section.practice_6 > p, section.practice_6 figure, section.practice_6 table {
+  margin: 0.1em 0.5em 1em 0.5em;
+}
+
+/*section.practice_7 - Not used in Classroom*/
+
+/*Source*/
+
+.source {
+  font-style: italic;
+  text-align: right;
+}
+
+.source p {
+  font-size: 1em;
+  margin: 0 0.5em 0.5em 0;
+  padding: 0 0.5em 0 0;
+}
+
+/*glossary term*/
+dfn {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6em;
+}
+
+/*block quote*/
+blockquote {
+  margin: 1.5em;
+  border: none;
+  background-color: #f6e3cf;
+  font-size: 1em;
+  line-height: 1.7em;
+  padding: 0.3em 0.3em 0.3em 0.3em;
+  margin: 0 5em 1em 3em;
+  display: inline-block;
+  quotes: none;
+}
+
+blockquote :last-child {
+  margin-bottom: 0;
+}
+
+blockquote header h1, blockquote hgroup h1, blockquote header .title, blockquote hgroup .title, blockquote header .subtitle, blockquote hgroup .subtitle {
+  background-color: #f6e3cf;
+  padding: 0 0 0 0.5em;
+  margin: 0 0 0.5em 0;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+}
+
+blockquote header h1 .label, blockquote hgroup h1 .label, blockquote header h1 .number, blockquote hgroup h1 .number, blockquote header .subtitle .label, blockquote hgroup .subtitle .label, blockquote header .subtitle .number, blockquote hgroup .subtitle .number {
+   padding: 0 0.4em 0 0;
+   background-color: #f6e3cf;
+}
+
+blockquote p {
+   margin: 0.5em 0.5em 1em 0.5em;
+   padding: 0 0 0.5em 0;
+}
+
+/*News article*/
+div.essay_1 {
+  margin: 0 1.5em 1em 1.5em;
+  background-color: #FFF;
+  padding: 0.25em;
+  line-height: 1.6em;
+  column-count: 2;
+  column-gap: 1em;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 1em;
+  -moz-column-count: 2;
+  -moz-column-gap: 1em;
+  -webkit-column-break-inside: avoid;
+}
+
+div.essay_1 hgroup, div.essay_1 header {
+  column-span: all;
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  margin: 0.25em;
+  background-color: #FFF;
+}
+
+div.essay_1 > hgroup h1, div.essay_1 > header h1, div.essay_1 > hgroup .title, div.essay_1 > header .title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #FFF;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-indent: 0;
+  margin-bottom: 0;
+  border: none;
+  padding: 0;
+}
+
+div.essay_1 > hgroup .label, div.essay_1 > hgroup .number, div.essay_1 header .label, div.essay_1 header .number {
+  font-size: 100%;
+  color: black;
+  border: none;
+  padding: 0 0.4em 0 0;
+}
+
+div.essay_1 hgroup h1 a, div.essay_1 > header  h1 a, div.essay_1 hgroup .title a, div.essay_1 > header .title a {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 100%;
+}
+
+div.essay_1 hgroup .subtitle a, div.essay_1 .p_ls_3 a, div.essay_1 header .subtitle a, div.essay_1 .p_ls_3 a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+div.essay_1 hgroup .subtitle, div.essay_1 header .subtitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  margin-bottom: 1em;
+  background-color: white;
+  color: black;
+  text-indent: 0;
+}
+
+div.essay_1 .p_ls_3, div.essay_1 .p_ls_3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  border-bottom: solid #000 0.1em;
+  background-color: white;
+  color: black;
+  text-indent: 0;
+  margin-bottom: 0.35em;
+}
+
+div.essay_1 p {
+  text-indent: 2em;
+  margin: 0.25em 0.25em 0 0.25em;
+  background-color: white;
+}
+
+div.essay_1 p:first-of-type, div.essay_1 a.keyword {
+  text-indent: 0;
+}
+
+div.essay_1 figure, div.essay_1 table {
+  margin: 1em 0.5em 1em 0.5em;
+}
+
+div.essay_1 figure figcaption hgroup h1, div.essay_1 figure figcaption header h1, div.essay_1 figure figcaption hgroup .title, div.essay_1 figure figcaption header .title {
+  background-color: white;
+  margin: 0;
+  padding: 0 0.3em 1em 0;
+}
+
+/*Essay*/
+div.essay_2 {
+  text-indent: 2em;
+  margin: 0.5em 1.5em 1em 1.5em;
+  background-color: #FFF;
+  padding: 0.25em 0.25em 1em 0.25em;
+}
+
+div.essay_2 hgroup h1, div.essay_2 hgroup .title, div.essay_2 header h1, div.essay_2 header .title {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-indent: 0;
+  margin-bottom: 0.3em;
+  border: none;
+  background-color: white;
+  color: black;
+}
+
+div.essay_2 hgroup .label, div.essay_2 hgroup .number, div.essay_2 header .label, div.essay_2 header .number {
+  padding: 0 0.2em 0 0;
+}
+
+div.essay_2 hgroup .subtitle, div.essay_2 header .subtitle {
+  font-weight: bold;
+  font-size: 1em;
+  text-indent: 0;
+  margin: 0.3em 0 0 0.3em;
+  background-color: white;
+  color: black;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+div.essay_2 hgroup a, div.essay_2 header a {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 100%;
+}
+
+div.essay_2 p {
+  text-indent: 2em;
+  margin-bottom: 0;
+  background-color: white;
+}
+
+div.essay_2 li p {
+  text-indent: 0;
+}
+
+div.essay_2 p:first-of-type {
+  text-indent: 0;
+  margin-bottom: 0;
+  line-height: 1.6em;
+  letter-spacing: 0.005em;
+  background-color: #FFF;
+}
+
+div.essay a.keyword {
+  text-indent: 0;
+}
+
+div.essay_2 figure, div.essay_2 table {
+  margin: 1.5em 0.5em 1em 0.5em;
+}
+
+div.essay_2 figcaption hgroup h1, div.essay_2 figcaption hgroup .title, div.essay_2 figcaption header h1, div.essay_2 figcaption header .title {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 1.5em 0.5em 1em 0.5em;
+}
+
+div.essay_2 figcaption hgroup h1 .label, div.essay_2 figcaption hgroup h1 .number, div.essay_2 figcaption header h1 .label, div.essay_2 figcaption header h1 .number {
+  padding-right: 0.4em;
+  font-weight: bold;
+}
+
+/*EOF Sections*/
+
+/*BOF tables*/
+
+.table figcaption hgroup h1, .table figcaption header h1, .table figcaption hgroup .title, .table figcaption header .title, table figcaption hgroup h1, table figcaption header h1, table figcaption hgroup .title, table figcaption header .title {
+  font-weight: normal;
+}
+
+.table figcaption hgroup h1 .label, .table figcaption hgroup h1 .number, .table figcaption header h1 .label, .table figcaption header h1 .number {
+  font-weight: bold;
+  padding-right: 0.2em;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  border-top: 1px solid #000;
+  font-size: 1em;
+  margin: 0 1.5em 1em 1.5em;
+  width: auto;
+  -webkit-column-break-inside: avoid;
+}
+
+table a {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+thead th, th {
+  border-right: 1px solid #000;
+  background-color: #bfe0dc;
+  font-weight: bold;
+  color: black;
+  padding: 0.2em;
+}
+
+thead th p, tr th p, th p, td p {
+   margin: 0;
+}
+
+th.th_1 {
+  background-color: #d9ecea;
+}
+
+tr {
+  border: 1px solid #000;
+}
+
+td {
+  border: 1px solid #000;
+  background-color: white;
+  padding: 0.35em
+}
+
+/*Wordbox*/
+table.table_1 {
+   margin: 0 0.5em 1em 2em;
+   border: none;
+}
+
+table.table_1 tr {
+   border: none;
+}
+
+table.table_1 td {
+   text-align: center;
+   border-top: 0.75em solid #FFF;
+   border-right: 0.5em solid #FFF;
+   border-left: 0.5em solid #FFF;
+   border-bottom: 0.75em solid #FFF;
+   background-color: #d9e8da;
+   padding: 0.5em;
+}
+
+/*EOF tables*/
+
+/*BOF custom styles*/
+
+a, a.xref, a.pageref, a.keyword, a.ulink {
+  padding-right: 0;
+  color: #0000FF;
+  display: inline;
+}
+
+/*mark total*/
+p.p_lc_1 {
+  text-align: right;
+  font-weight: bold;
+}
+
+/*highlighted text*/
+span.span_1 {
+  background-color: #ffff33;
+}
+
+/*letter subject*/
+span.span_2 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*activity time*/
+span.span_3 {
+  font-size: 0.9em;
+  font-family: Verdana, sans-serif;
+}
+
+/*line number*/
+span.span_6 {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-left: 2em;
+}
+
+/*mark allocation*/
+span.span_7 {
+  font-size: 1em;
+  font-style: normal;
+  margin-left: 2em;
+}
+
+/*maths annotation*/
+span.span_8 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.85em;
+  color: #666;
+}
+
+/*Verdana bold*/
+span.span_9 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+}
+
+/*Verdana italics*/
+span.span_10 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-style: italic;
+}
+
+/*Magenta text*/
+span.span_11 {
+  color: #c4007a;
+}
+
+/*Cyan text*/
+span.span_12 {
+  color: #009de0;
+}
+
+/*Red text*/
+span.span_13 {
+  color: #F00;
+}
+
+/*Green text*/
+span.span_14 {
+  color: #0C0;
+}
+
+/*Purple text*/
+span.span_15 {
+  color: #90C;
+}
+
+/*Dark blue text*/
+span.span_16 {
+  color: #009;
+}
+
+/*Orange text*/
+span.span_17 {
+  color: #F90;
+}
+
+/*red highlighted text*/
+span.span_18 {
+  background-color: #F66;
+}
+
+/*green highlighted text*/
+span.span_19 {
+  background-color: #6F6;
+}
+
+/*purple highlighted text*/
+span.span_20 {
+  background-color: #99F;
+}
+
+/*blue highlighted text*/
+span.span_21 {
+  background-color: #0CF;
+}
+
+span.emphasis, i {
+	font-style: italic;
+}
+
+span.keyword, span.pronunciation { 
+	font-weight: 700;
+  	color: #3399cc;
+  	text-decoration: none;  
+}
+
+span.smallcaps {   
+	font-variant: small-caps;
+}
+
+strong, span.strong {
+	font-weight: 700;
+}
+
+s {  
+	text-decoration: line-through; 
+}
+
+sup, sub {   
+	vertical-align: baseline;
+  	position: relative;
+  	top: -0.4em;
+  	font-size: 0.6em;
+}
+
+sub {  
+	top: 0.2em;
+}
+
+u {
+	text-decoration: underline;   
+}
+
+.text-center {  
+	text-align: center;
+}
+
+.doubleunderscore {   
+	border-bottom: 4px double #333333;
+}
+
+ins {  
+	text-decoration: underline; 
+}
+
+del { 
+	text-decoration: line-through;  
+}
+
+span.wol {  
+	text-decoration: underline;
+}
+
+/*EOF custom styles*/
